@@ -10,6 +10,7 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <section
@@ -20,377 +21,6 @@
         background-color: #fafcff;
       "
     >
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        .header-3-3 .modal-backdrop.show {
-          background-color: #000;
-          opacity: 0.6;
-        }
-
-        .header-3-3 .modal-item.modal {
-          top: 2rem;
-        }
-
-        .header-3-3 .navbar {
-          padding: 2rem 2rem;
-        }
-
-        .header-3-3 .navbar-light .navbar-nav .nav-link {
-          font: 300 0.875rem/1.5rem Poppins, sans-serif;
-          color: #8b9caf;
-          padding: 0rem 1.25rem 0rem 0rem;
-          margin-right: 0;
-          margin-left: 0;
-        }
-
-        .header-3-3 .navbar-light .navbar-nav .nav-link:hover {
-          font: 500 0.875rem/1.5rem Poppins, sans-serif;
-          color: #243142;
-        }
-
-        .header-3-3 .navbar-light .navbar-nav .active {
-          position: relative;
-          width: fit-content;
-        }
-
-        .header-3-3 .navbar-light .navbar-nav .active > .nav-link,
-        .header-3-3 .navbar-light .navbar-nav .nav-link.active,
-        .header-3-3 .navbar-light .navbar-nav .nav-link.show,
-        .header-3-3 .navbar-light .navbar-nav .show > .nav-link {
-          font-weight: 500;
-        }
-
-        .header-3-3 .navbar-light .navbar-toggler-icon {
-          background-image: urlurl(
-            "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
-          );
-        }
-
-        .header-3-3 .btn:focus,
-        .header-3-3 .btn:active {
-          outline: none !important;
-        }
-
-        .header-3-3 .btn-fill {
-          font: 500 0.875rem/1.25rem Poppins, sans-serif;
-          border: 1px solid #4e91f9;
-          background-color: #4e91f9;
-          border-radius: 999px;
-          padding: 0.75rem 1.5rem;
-          transition: 0.3s;
-        }
-
-        .header-3-3 .btn-fill:hover {
-          background-color: #6da4f9;
-          border: 1px solid #6da4f9;
-        }
-
-        .header-3-3 .btn-no-fill {
-          font: 500 0.875rem/1.25rem Poppins, sans-serif;
-          color: #8b9caf;
-          padding: 0.75rem 2rem;
-        }
-
-        .header-3-3 .btn-no-fill:hover {
-          color: #243142;
-        }
-
-        .header-3-3 .modal-item .modal-dialog .modal-content {
-          border-radius: 8px;
-        }
-
-        .header-3-3 .responsive li {
-          padding: 1rem;
-        }
-
-        .header-3-3 .hr {
-          padding-left: 2rem;
-          padding-right: 2rem;
-        }
-
-        .header-3-3 .hero {
-          padding: 4rem 2rem;
-        }
-
-        .header-3-3 .left-column {
-          margin-bottom: 0.75rem;
-          width: 100%;
-        }
-
-        .header-3-3 .title-text-big {
-          font: 600 2.25rem / normal Poppins, sans-serif;
-          margin-bottom: 1.25rem;
-          color: #243142;
-        }
-
-        .header-3-3 .text-caption {
-          font: 300 1rem/1.5rem Poppins, sans-serif;
-          letter-spacing: 0.025em;
-          color: #8b9caf;
-          margin-bottom: 5rem;
-        }
-
-        .header-3-3 .btn-get {
-          font: 600 1rem/1.5rem Poppins, sans-serif;
-          padding: 1rem 2rem;
-          border-radius: 999px;
-          border: 1px solid #4e91f9;
-          background-color: #4e91f9;
-          transition: 0.3s;
-        }
-
-        .header-3-3 .btn-get:hover {
-          background-color: #6da4f9;
-          border: 1px solid #6da4f9;
-        }
-
-        .header-3-3 .btn-outline {
-          font: 400 1rem/1.5rem Poppins, sans-serif;
-          padding: 1rem 1.5rem;
-          border-radius: 999px;
-          background-color: transparent;
-          border: 1px solid #a6b1be;
-          color: #a6b1be;
-          transition: 0.3s;
-        }
-
-        .header-3-3 .btn-outline:hover {
-          border: 1px solid #6da4f9;
-          color: #6da4f9;
-        }
-
-        .header-3-3 .btn-outline:hover div path {
-          fill: #6da4f9;
-        }
-
-        .header-3-3 .btn-outline:hover div rect {
-          stroke: #6da4f9;
-        }
-
-        .header-3-3 .right-column {
-          width: 100%;
-        }
-
-        .header-3-3 .hero-right {
-          right: 2rem;
-          bottom: 0;
-        }
-
-        .header-3-3 .card-outer {
-          padding-left: 0;
-          z-index: 1;
-        }
-
-        .header-3-3 .card {
-          transition: 0.4s;
-          top: 0px;
-          left: 0px;
-          background-color: #ffffff;
-          padding: 1.25rem;
-          border-radius: 0.75rem;
-          width: 100%;
-          margin-top: 2.5rem;
-          box-shadow: -4px 4px 10px 0px rgba(224, 224, 224, 0.25);
-        }
-
-        .header-3-3 .card:hover {
-          top: -3px;
-          left: -3px;
-          transition: 0.4s;
-          box-shadow: -4px 8px 15px 0px rgba(167, 167, 167, 0.25);
-        }
-
-        .header-3-3 .card-name {
-          font: 600 1rem/1.5rem Poppins, sans-serif;
-          margin-bottom: 0.25rem;
-        }
-
-        .header-3-3 .card-job {
-          font: 300 0.75rem/1rem Poppins, sans-serif;
-          color: #aaa6a6;
-          margin-bottom: 0;
-        }
-
-        .header-3-3 .card-price-left {
-          font: 500 1rem/1.5rem Poppins, sans-serif;
-          margin-bottom: 0.125rem;
-          color: #1b8171;
-        }
-
-        .header-3-3 .card-caption {
-          font: 300 0.75rem/1rem Poppins, sans-serif;
-          color: #aaa6a6;
-          margin-bottom: 0;
-        }
-
-        .header-3-3 .card-price-right {
-          font: 500 1rem/1.5rem Poppins, sans-serif;
-          margin-bottom: 0.125rem;
-          color: #ff7468;
-        }
-
-        .header-3-3 .btn-hire {
-          font: 600 1rem/1.5rem Poppins, sans-serif;
-          padding: 0.75rem 4rem;
-          border-radius: 0.75rem;
-          margin-bottom: 0.125rem;
-          border: 1px solid #4e91f9;
-          background-color: #4e91f9;
-          transition: 0.3s;
-        }
-
-        .header-3-3 .btn-hire:hover {
-          background-color: #6da4f9;
-          border: 1px solid #6da4f9;
-        }
-
-        .header-3-3 .form {
-          border-radius: 999px;
-          background-color: #eef4fd;
-          box-sizing: border-box;
-          font-size: 14px;
-          padding: 0rem 1rem;
-          padding-right: 0.5rem;
-          outline: none;
-        }
-
-        .header-3-3 .form div input[type="text"] {
-          background-color: #eef4fd;
-          box-sizing: border-box;
-          font-size: 14px;
-          padding: 0rem 0.5rem;
-          outline: none;
-          width: 100%;
-        }
-
-        .header-3-3 .center-search {
-          bottom: 0.5rem;
-        }
-
-        @media (min-width: 576px) {
-          .header-3-3 .modal-item .modal-dialog {
-            max-width: 95%;
-            border-radius: 12px;
-          }
-
-          .header-3-3 .navbar {
-            padding: 2rem;
-          }
-
-          .header-3-3 .title-text-big {
-            font-size: 3rem;
-            line-height: 1.2;
-          }
-        }
-
-        @media (min-width: 768px) {
-          .header-3-3 .navbar {
-            padding: 2rem 4rem;
-          }
-
-          .header-3-3 .hr {
-            padding-left: 4rem;
-            padding-right: 4rem;
-          }
-
-          .header-3-3 .hero {
-            padding: 4rem;
-          }
-
-          .header-3-3 .left-column {
-            margin-bottom: 3rem;
-          }
-
-          .header-3-3 .hero-right {
-            right: 4rem;
-          }
-
-          .header-3-3 .card {
-            margin-left: auto;
-            margin-top: 0;
-          }
-        }
-
-        @media (min-width: 992px) {
-          .header-3-3 .navbar-light .navbar-nav .active:before {
-            content: "";
-            position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
-            text-align: center;
-            bottom: 0;
-            height: 0px;
-            width: 80%;
-            /* or 100px */
-            border-bottom: 2px solid #4e91f9;
-          }
-
-          .header-3-3 .navbar {
-            padding: 2rem 6rem;
-          }
-
-          .header-3-3 .navbar-light .navbar-nav .nav-link {
-            padding: 0;
-            margin-right: 1rem;
-            margin-left: 1rem;
-          }
-
-          .header-3-3 .navbar-light .navbar-nav .active:before {
-            width: 40%;
-          }
-
-          .header-3-3 .hr {
-            padding-left: 6rem;
-            padding-right: 6rem;
-          }
-
-          .header-3-3 .hero {
-            padding: 4rem 6rem 5rem;
-          }
-
-          .header-3-3 .left-column {
-            width: 50%;
-            margin-bottom: 0;
-          }
-
-          .header-3-3 .title-text-big {
-            font-size: 3.75rem;
-            line-height: 1.25;
-          }
-
-          .header-3-3 .right-column {
-            width: 50%;
-          }
-
-          .header-3-3 .hero-right {
-            right: 6rem;
-          }
-
-          .header-3-3 .card-outer {
-            padding-left: 4rem;
-          }
-
-          .header-3-3 .center-search {
-            left: 48%;
-            top: 50%;
-            bottom: auto;
-            transform: translate(-48%, -50%);
-          }
-
-          .header-3-3 .form {
-            width: 340px;
-          }
-        }
-
-        @media (max-width: 1023px) {
-          .header-3-3 .form div input[type="text"] {
-            width: 100%;
-          }
-        }
-      </style>
       <nav
         class="navbar-1-1 navbar navbar-expand-lg navbar-light p-4 px-md-4 mb-3 bg-body"
         style="
@@ -399,7 +29,7 @@
         "
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="form.html">
             <svg
               width="42"
               height="42"
@@ -448,7 +78,14 @@
                 <a class="nav-link px-md-4" href="#">Testimoni</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-md-4" href="#">Contact</a>
+                <a class="nav-link px-md-4" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-md-4"
+                  href="https://wa.me/6281230066867?text=Hallo admin, saya mau tanya-tanya mengenai pemesanan ?"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -552,10 +189,14 @@
                         <p class="card-caption">Testimoni</p>
                       </div>
                     </div>
-                    <button class="btn btn-hire text-white">
-                      <div class="test d-none">Contact Us</div>
-                      Contact Us
-                    </button>
+                    <a
+                      href="https://wa.me/6281230066867?text=Hallo admin, saya mau tanya-tanya mengenai pemesanan ?"
+                    >
+                      <button class="btn btn-hire text-white">
+                        <div class="test d-none">Contact Us</div>
+                        Contact Us
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -566,99 +207,6 @@
     </section>
 
     <section class="h1-00 w-100 bg-white" style="box-sizing: border-box">
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        .content-3-2 .btn:focus,
-        .content-3-2 .btn:active {
-          outline: none !important;
-        }
-
-        .content-3-2 {
-          padding: 5rem 2rem;
-        }
-
-        .content-3-2 .img-hero {
-          width: 100%;
-          margin-bottom: 3rem;
-        }
-
-        .content-3-2 .right-column {
-          width: 100%;
-        }
-
-        .content-3-2 .title-text {
-          font: 600 1.875rem/2.25rem Poppins, sans-serif;
-          margin-bottom: 2.5rem;
-          letter-spacing: -0.025em;
-          color: #121212;
-        }
-
-        .content-3-2 .title-caption {
-          font: 500 1.5rem/2rem Poppins, sans-serif;
-          margin-bottom: 1.25rem;
-          color: #121212;
-        }
-
-        .content-3-2 h2 {
-          font-family: "Red Hat Display", sans-serif !important;
-          font-weight: 700 !important;
-          font-size: 60px;
-          line-height: 140%;
-          color: #16171c;
-        }
-
-        .content-3-2 .circle {
-          font: 500 1.25rem/1.75rem Poppins, sans-serif;
-          height: 3rem;
-          width: 3rem;
-          margin-bottom: 1.25rem;
-          border-radius: 9999px;
-          background-color: #27c499;
-        }
-
-        .content-3-2 .text-caption {
-          font: 400 1rem/1.75rem Poppins, sans-serif;
-          letter-spacing: 0.025em;
-          color: #565656;
-        }
-
-        .content-3-2 .btn-learn {
-          font: 600 1rem/1.5rem Poppins, sans-serif;
-          padding: 1rem 2.5rem;
-          background-color: #27c499;
-          transition: 0.3s;
-          letter-spacing: 0.025em;
-          border-radius: 0.75rem;
-        }
-
-        .content-3-2 .btn:hover {
-          background-color: #45dbb2;
-          transition: 0.3s;
-        }
-
-        @media (min-width: 768px) {
-          .content-3-2 .title-text {
-            font: 600 2.25rem/2.5rem Poppins, sans-serif;
-          }
-        }
-
-        @media (min-width: 992px) {
-          .content-3-2 .img-hero {
-            width: 50%;
-            margin-bottom: 0;
-          }
-
-          .content-3-2 .right-column {
-            width: 50%;
-          }
-
-          .content-3-2 .circle {
-            margin-right: 1.25rem;
-            margin-bottom: 0;
-          }
-        }
-      </style>
       <div
         class="content-3-2 container-xxl mx-auto position-relative"
         style="font-family: 'Poppins', sans-serif"
@@ -700,56 +248,6 @@
     </section>
 
     <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-        .empty-2-2 {
-          padding: 4rem 2rem 4rem;
-        }
-        .empty-2-2 .main-img {
-          object-fit: cover;
-          object-position: center;
-          margin-bottom: 3rem;
-          width: 75%;
-        }
-        .empty-2-2 .title-text {
-          color: #272e35;
-          font: 600 1.875rem/2.25rem Poppins, sans-serif;
-          margin-bottom: 1.25rem;
-        }
-        .empty-2-2 .title-caption {
-          color: #9c9c9c;
-          margin-bottom: 4rem;
-          letter-spacing: 0.025em;
-          line-height: 1.75rem;
-        }
-        .empty-2-2 .btn-back {
-          background-color: #27c499;
-          font: 600 1.125rem/1.75rem Poppins, sans-serif;
-          padding: 1rem 1.5rem;
-          border-radius: 0.75rem;
-        }
-        .empty-2-2 .btn-back:hover {
-          --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-            0 4px 6px -2px rgba(0, 0, 0, 0.05);
-          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-            var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-        }
-        @media (min-width: 425px) {
-          .empty-2-2 .title-text {
-            font-size: 40px;
-          }
-        }
-        @media (min-width: 576px) {
-          .empty-2-2 {
-            padding-top: 5rem;
-          }
-          .empty-2-2 .main-img {
-            margin-bottom: 4rem;
-            width: auto;
-          }
-        }
-      </style>
-
       <div
         class="empty-2-2 container mx-auto d-flex align-items-center justify-content-center flex-column"
         style="font-family: 'Poppins', sans-serif"
@@ -774,266 +272,7 @@
       </div>
     </section>
 
-    <!-- <section class="adventages">
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-        crossorigin="anonymous"
-      />
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"
-      ></script>
-
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
-
-        * {
-          font-family: "Inter", sans-serif !important;
-        }
-
-        body ::-webkit-input-placeholder {
-          color: #989db1 !important;
-        }
-
-        body :-ms-input-placeholder {
-          color: #989db1 !important;
-        }
-
-        body ::-ms-input-placeholder {
-          color: #989db1 !important;
-        }
-
-        body ::placeholder {
-          color: #989db1 !important;
-        }
-
-        body .font-red-hat-display {
-          font-family: "Red Hat Display", sans-serif !important;
-        }
-
-        body .cl-light-blue {
-          color: #34b3ff;
-        }
-
-        body .adventages {
-          z-index: 10 !important;
-          position: relative;
-          background: #ffffff;
-          padding-top: 90px;
-          padding-bottom: 90px;
-        }
-
-        body .adventages .headline {
-          font-family: "Red Hat Display", sans-serif !important;
-          font-weight: 700 !important;
-          font-size: 60px;
-          line-height: 140%;
-          color: #16171c;
-        }
-
-        @media screen and (max-width: 768px) {
-          body .adventages .headline {
-            font-size: 44px;
-            line-height: 60px !important;
-          }
-        }
-
-        body .adventages .card {
-          background: transparent;
-          width: 286px;
-          border: none;
-          margin-top: 125px;
-        }
-
-        @media screen and (max-width: 768px) {
-          body .adventages .card {
-            margin-top: 80px;
-          }
-        }
-
-        body .adventages .card-desc {
-          margin-top: 32px;
-        }
-
-        body .adventages .card-title {
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 24px;
-          color: #16171c;
-        }
-
-        body .adventages .card-text {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 160%;
-          color: #494c57;
-        }
-      </style>
-      <div class="container">
-        <div class="row mx-0 text-center d-block">
-          <div class="headline">
-            We Provide the Easiest Way to <br />
-            <span class="cl-light-blue font-red-hat-display"
-              >Manage Your Finances</span
-            >
-          </div>
-        </div>
-        <div
-          class="value row mx-0 d-flex justify-content-center justify-content-md-between"
-        >
-          <div class="card">
-            <div class="card-body p-0">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dollar-sign.png"
-                alt="dolar"
-                class="img-fluid"
-              />
-              <div class="card-desc">
-                <h4 class="card-title">Great Trading</h4>
-                <p class="card-text">
-                  We believe in the potential to provide groundbreaking
-                  solutions across industries.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body p-0">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/shield.png"
-                alt="dolar"
-                class="img-fluid"
-              />
-              <div class="card-desc">
-                <h4 class="card-title">Security First</h4>
-                <p class="card-text">
-                  Security has been our top consideration because when choosing
-                  an exchange, trust matters.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body p-0">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/cpu.png"
-                alt="dolar"
-                class="img-fluid"
-              />
-              <div class="card-desc">
-                <h4 class="card-title">Robust Technology</h4>
-                <p class="card-text">
-                  To enhance the safety aspect of our products, our products are
-                  developed using the latest robust technology.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section class="content">
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-        * {
-          font-family: "Poppins", sans-serif !important;
-        }
-
-        body .content {
-          background: #ffffff;
-        }
-
-        body .content .content {
-          padding-top: 70px;
-          padding-bottom: 70px;
-        }
-
-        body .content .content .tagline {
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 27px;
-          /* identical to box height */
-          color: #db0d70;
-        }
-
-        body .content .content .headline {
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 45px;
-          line-height: 67px;
-          color: #111f37;
-        }
-
-        body .content .content .benefits {
-          margin-top: 50px;
-        }
-
-        body .content .content .benefits .rectangle {
-          max-width: 288px;
-          max-height: 380px;
-          border: 1px solid #9ba8be;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          border-radius: 26px;
-        }
-
-        body .content .content .benefits .rectangle img {
-          margin-top: 50px;
-        }
-
-        body .content .content .benefits .rectangle .headline-benefit {
-          margin-top: 40px;
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 27px;
-          /* identical to box height */
-          text-align: center;
-          color: #111f37;
-        }
-
-        body .content .content .benefits .rectangle .subheadline-benefit {
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 28px;
-          /* or 175% */
-          text-align: center;
-          color: #627492;
-          margin-bottom: 40px;
-        }
-
-        body .content .content .img-brand {
-          margin-top: 50px;
-        }
-
-        body .content .content .img-brand img {
-          margin-right: 60px;
-        }
-
-        @media only screen and (max-width: 768px) {
-          body .content .content .img-brand img {
-            margin-right: 30px;
-            margin-left: 30px;
-          }
-        }
-        /*# sourceMappingURL=main.css.map */
-      </style>
       <div class="container">
         <div class="row content">
           <div class="col-12 px-md-0 my-auto">
@@ -1051,6 +290,11 @@
                     Get yourself ready and join <br class="d-none d-md-block" />
                     our great adventures
                   </div>
+                  <a href="produk.html" style="text-decoration: none">
+                    <button class="btn btn-produk text-white d-inline-flex">
+                      Selengkapnya
+                    </button>
+                  </a>
                 </div>
               </div>
               <div class="col-md-3 mt-5 mt-md-0">
@@ -1062,6 +306,11 @@
                     <br class="d-none d-md-block" />
                     prepared for your career
                   </div>
+                  <a href="produk.html" style="text-decoration: none">
+                    <button class="btn btn-produk text-white d-inline-flex">
+                      Selengkapnya
+                    </button>
+                  </a>
                 </div>
               </div>
               <div class="col-md-3 mt-5 mt-md-0">
@@ -1073,6 +322,11 @@
                     <br class="d-none d-md-block" />
                     your dream companies
                   </div>
+                  <a href="produk.html" style="text-decoration: none">
+                    <button class="btn btn-produk text-white d-inline-flex">
+                      Selengkapnya
+                    </button>
+                  </a>
                 </div>
               </div>
               <div class="col-md-3 mt-5 mt-md-0">
@@ -1084,6 +338,11 @@
                     <br class="d-none d-md-block" />
                     your dream companies
                   </div>
+                  <a href="produk.html" style="text-decoration: none">
+                    <button class="btn btn-produk text-white d-inline-flex">
+                      Selengkapnya
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1091,6 +350,7 @@
         </div>
       </div>
     </section>
+
     <section class="choose">
       <link
         rel="stylesheet"
@@ -1145,19 +405,19 @@
         </div>
         <div class="row py-5">
           <div
-            class="col-md-3 p-4"
+            class="col-md-3 p-4 text-center"
             onmouseover="coloringgoals(this)"
             onmouseout="normalgoals(this)"
           >
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes.svg"
               alt="taxes"
-              class="img-fluid"
+              class="img-fluid mx-auto"
             />
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes-color.svg"
               alt="taxes"
-              class="img-fluid"
+              class="img-fluid mx-auto"
               style="display: none"
             />
             <p class="font-weight-bold mt-4 mb-1 cl-blue">Cepat</p>
@@ -1166,19 +426,19 @@
             </p>
           </div>
           <div
-            class="col-md-3 p-4"
+            class="col-md-3 p-4 text-center"
             onmouseover="coloringgoals(this)"
             onmouseout="normalgoals(this)"
           >
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user.svg"
               alt="user"
-              class="img-fluid"
+              class="img-fluid mx-auto"
             />
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user-color.svg"
               alt="user"
-              class="img-fluid"
+              class="img-fluid mx-auto"
               style="display: none"
             />
             <p class="font-weight-bold mt-4 mb-1 cl-blue">Terpercaya</p>
@@ -1188,19 +448,19 @@
             </p>
           </div>
           <div
-            class="col-md-3 p-4"
+            class="col-md-3 p-4 text-center"
             onmouseover="coloringgoals(this)"
             onmouseout="normalgoals(this)"
           >
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount.svg"
               alt="discount"
-              class="img-fluid"
+              class="img-fluid mx-auto"
             />
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount-color.svg"
               alt="user"
-              class="img-fluid"
+              class="img-fluid mx-auto"
               style="display: none"
             />
             <p class="font-weight-bold mt-4 mb-1 cl-blue">Handal</p>
@@ -1210,19 +470,19 @@
             </p>
           </div>
           <div
-            class="col-md-3 p-4"
+            class="col-md-3 p-4 text-center"
             onmouseover="coloringgoals(this)"
             onmouseout="normalgoals(this)"
           >
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar.svg"
               alt="calendar"
-              class="img-fluid"
+              class="img-fluid mx-auto"
             />
             <img
               src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar-color.svg"
               alt="user"
-              class="img-fluid"
+              class="img-fluid mx-auto"
               style="display: none"
             />
             <p class="font-weight-bold mt-4 mb-1 cl-blue">Kekinian</p>
@@ -1249,6 +509,7 @@
         }
       </script>
     </section>
+
     <section class="testimoni">
       <link
         rel="stylesheet"
@@ -1266,96 +527,6 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"
       ></script>
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-
-        * {
-          font-family: "Inter", sans-serif !important;
-        }
-
-        body .img-testimoni {
-          z-index: -1 !important;
-          right: 0 !important;
-          position: absolute;
-          margin-top: 92px;
-          margin-right: 68px;
-        }
-
-        body .testimoni {
-          padding-top: 50px;
-          padding-bottom: 50px;
-        }
-
-        body .testimoni h1 {
-          color: #232323;
-          font-weight: 700 !important;
-        }
-
-        @media screen and (min-width: 768px) {
-          body .testimoni {
-            padding-bottom: 188px;
-          }
-
-          body .testimoni h1 {
-            font-size: 60px !important;
-          }
-        }
-
-        @media screen and (min-width: 768px) {
-          body .testimoni .container {
-            padding-top: 120px;
-          }
-
-          body .testimoni .container h1 {
-            width: 722px;
-            font-size: 60px;
-            line-height: 90px !important;
-          }
-        }
-
-        body .testimoni .container h1 {
-          line-height: 50px;
-          font-weight: 700 !important;
-        }
-
-        body .testimoni .container .testi-text {
-          line-height: 28px;
-          color: #9c9c9c;
-        }
-
-        @media screen and (min-width: 768px) {
-          body .testimoni .container .testi-text {
-            width: 500px;
-          }
-        }
-
-        body .testimoni .container .card {
-          border-radius: 28px;
-          border: none !important;
-          -webkit-box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
-          box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
-        }
-
-        body .testimoni .container .card p {
-          color: #9c9c9c;
-        }
-
-        body .cl-black {
-          color: black !important;
-        }
-
-        body .cl-orange {
-          color: #ff9900;
-        }
-
-        body .cl-dusty-grey {
-          color: #9c9c9c;
-        }
-
-        body .place .img-place-header {
-          width: 100% !important;
-        }
-      </style>
       <img
         src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/testimonial-photo-bg.png"
         alt="bg-testimoni"
@@ -1446,167 +617,11 @@
         </div>
       </div>
     </section>
+
     <section
       class="h-100 w-100"
       style="box-sizing: border-box; background-color: #f2f6ff"
     >
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        .content-3-7 .btn:focus,
-        .content-3-7 .btn:active {
-          outline: none !important;
-        }
-
-        .content-3-7 {
-          padding: 5rem 2rem 7rem;
-        }
-
-        .content-3-7 .title-text {
-          font: 800 1.875rem/2.25rem Poppins, sans-serif;
-          letter-spacing: 0.05em;
-          margin-bottom: 0.75rem;
-          color: #2e3a53;
-        }
-
-        .content-3-7 .caption-text {
-          font: 400 1rem/1.5rem Poppins, sans-serif;
-          letter-spacing: 0.025em;
-          color: #8e8fad;
-          margin-bottom: 0;
-        }
-
-        .content-3-7 .card-item {
-          transition: 0.4s;
-          top: 0px;
-          left: 0px;
-          padding: 1rem 0;
-        }
-
-        .content-3-7 .card-item:hover {
-          top: -3px;
-          left: -3px;
-          transition: 0.4s;
-        }
-
-        .content-3-7 .card-item-outline {
-          border: 1px solid #e5ebf9;
-          padding: 2rem 2.75rem;
-          border-radius: 1rem;
-        }
-
-        .content-3-7 .price-title {
-          font: 500 1.25rem/1.75rem Poppins, sans-serif;
-          color: #141c2e;
-          letter-spacing: 0.025em;
-          margin-bottom: 0.75rem;
-        }
-
-        .content-3-7 .price-value {
-          font: 500 2.25rem/2.5rem Poppins, sans-serif;
-          letter-spacing: 0.025em;
-          margin-bottom: 0.75rem;
-          color: #2e3a53;
-        }
-
-        .content-3-7 .price-duration {
-          font: 400 1rem/1.5rem Poppins, sans-serif;
-          margin: 0.625rem;
-          color: #9e9e9e;
-        }
-
-        .content-3-7 .price-caption {
-          font: 400 1rem/1.5rem Poppins, sans-serif;
-          letter-spacing: 0.025em;
-          margin-bottom: 2.5rem;
-          color: #c3c3c8;
-        }
-
-        .content-3-7 .price-list .check {
-          font: 400 0.875rem/1.25rem Poppins, sans-serif;
-          color: #2e3a53;
-          letter-spacing: 0.025em;
-          margin-bottom: 1.75rem;
-        }
-
-        .content-3-7 .price-list .no-check {
-          font: 400 0.875rem/1.25rem Poppins, sans-serif;
-          color: #e1e1e1;
-          letter-spacing: 0.025em;
-          margin-bottom: 1.75rem;
-        }
-
-        .content-3-7 .span-icon {
-          width: 1rem;
-          height: 1rem;
-          margin-right: 0.75rem;
-        }
-
-        .content-3-7 .btn-outline {
-          border: 1px solid #2ec49c;
-          color: #2ec49c;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          font-weight: 500;
-          letter-spacing: 0.025em;
-          border-radius: 0.5rem;
-        }
-
-        .content-3-7 .btn-outline:hover {
-          background-color: #2ec49c;
-          color: #ffffff;
-        }
-
-        .content-3-7 .btn-fill {
-          background-image: linear-gradient(
-            rgba(91, 203, 173, 1),
-            rgba(39, 194, 153, 1)
-          );
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          font-weight: 500;
-          letter-spacing: 0.025em;
-          border-radius: 0.5rem;
-        }
-
-        .content-3-7 .btn-fill:hover {
-          background-image: linear-gradient(#29b18d, #29b18d);
-        }
-
-        @media (min-width: 576px) {
-          .content-3-7 .title-text {
-            font: 800 2.25rem/2.5rem Poppins, sans-serif;
-          }
-
-          .content-3-7 .card-item {
-            padding: 1rem;
-          }
-        }
-
-        @media (min-width: 768px) {
-          .content-3-7 {
-            padding-left: 3.5rem;
-            padding-right: 3.5rem;
-          }
-        }
-
-        @media (min-width: 992px) {
-          .content-3-7 .caption-text {
-            width: 66.666667%;
-          }
-
-          .content-3-7 .card-item {
-            width: 33.333333%;
-          }
-        }
-
-        @media (min-width: 1200px) {
-          .content-3-7 {
-            padding-left: 9rem;
-            padding-right: 9rem;
-          }
-        }
-      </style>
       <div
         class="content-3-7 overflow-hidden container-xxl mx-auto position-relative"
         style="font-family: 'Poppins', sans-serif"
@@ -1618,8 +633,8 @@
           >
             <h2 class="title-text">Pricing That Everyone Works</h2>
             <p class="caption-text mx-auto">
-              Choose one of our friendly pricing that suitable<br />
-              for your business to grow bigger
+              Pilih salah satu harga bersahabat kami<br />
+              yang cocokuntuk bisnis anda
             </p>
           </div>
           <div class="d-flex flex-wrap">
@@ -1693,11 +708,13 @@
                     >Unlimited User
                   </p>
                 </div>
-                <button
-                  class="btn btn-outline d-flex justify-content-center align-items-center w-100"
-                >
-                  Choose Plan
-                </button>
+                <a href="form.html" style="text-decoration: none">
+                  <button
+                    class="btn btn-outline d-flex justify-content-center align-items-center w-100"
+                  >
+                    Choose Plan
+                  </button>
+                </a>
               </div>
             </div>
             <div class="mx-auto card-item position-relative">
@@ -1770,11 +787,13 @@
                     >Unlimited User
                   </p>
                 </div>
-                <button
-                  class="btn btn-outline d-flex justify-content-center align-items-center w-100"
-                >
-                  Choose Plan
-                </button>
+                <a href="form.html" style="text-decoration: none">
+                  <button
+                    class="btn btn-outline d-flex justify-content-center align-items-center w-100"
+                  >
+                    Choose Plan
+                  </button>
+                </a>
               </div>
             </div>
             <div class="mx-auto card-item position-relative">
@@ -1850,17 +869,20 @@
                     >Unlimited User
                   </p>
                 </div>
-                <button
-                  class="btn btn-fill text-white d-flex justify-content-center align-items-center w-100"
-                >
-                  Choose Plan
-                </button>
+                <a href="form.html" style="text-decoration: none">
+                  <button
+                    class="btn btn-fill text-white d-flex justify-content-center align-items-center w-100"
+                  >
+                    Choose Plan
+                  </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="ornament">
       <link
         rel="stylesheet"
@@ -1895,79 +917,6 @@
     </section>
 
     <section class="contact-us">
-      <style>
-        * {
-          font-family: "Inter", sans-serif !important;
-        }
-
-        body .font-red-hat-display {
-          font-family: "Red Hat Display", sans-serif !important;
-        }
-
-        body .cl-light-blue {
-          color: #34b3ff;
-        }
-
-        body .contact-us {
-          background: #ffffff;
-          padding-top: 125px;
-          padding-bottom: 90px;
-        }
-
-        body .contact-us .headline {
-          font-family: "Red Hat Display", sans-serif;
-          font-weight: 700;
-          font-size: 50px;
-          line-height: 140%;
-          text-align: center;
-          color: #16171c;
-        }
-
-        @media screen and (max-width: 768px) {
-          body .contact-us .headline {
-            font-size: 40px;
-            line-height: 60px !important;
-          }
-        }
-
-        body .contact-us .button {
-          margin-top: 72px;
-        }
-
-        body .contact-us .btn-contact {
-          padding: 16px 32px;
-          background: #00b67a;
-          border-radius: 12px;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 24px;
-          color: #ffffff;
-        }
-
-        @media screen and (max-width: 768px) {
-          body .contact-us .btn-contact {
-            width: 100%;
-          }
-        }
-
-        body .contact-us .btn-demo {
-          padding: 16px 32px;
-          border-radius: 12px;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 24px;
-          color: #16171c;
-          border: 1px solid #8d8f98;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-        }
-
-        @media screen and (max-width: 768px) {
-          body .contact-us .btn-demo {
-            width: 100%;
-          }
-        }
-      </style>
       <div class="container">
         <div class="row d-block mx-0">
           <div class="headline font-red-hat-display">
@@ -1977,7 +926,11 @@
         </div>
         <div class="row mx-0 button text-center">
           <div class="mb-4 mb-md-0">
-            <button class="btn btn-contact">Contact Us</button>
+            <a
+              href="https://wa.me/6281230066867?text=Hallo admin, saya mau tanya-tanya mengenai pemesanan ?"
+            >
+              <button class="btn btn-contact">Contact Us</button>
+            </a>
           </div>
           <!-- <div class="mb-4 mb-md-0">
             <button class="btn btn-demo">View Demo</button>
@@ -1985,96 +938,8 @@
         </div>
       </div>
     </section>
+
     <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        .footer-2-2 .list-space {
-          margin-bottom: 1.25rem;
-        }
-
-        .footer-2-2 .footer-text-title {
-          font-size: 1.5rem;
-          font-weight: 600;
-          color: #000000;
-          margin-bottom: 1.5rem;
-        }
-
-        .footer-2-2 .list-menu {
-          color: #c7c7c7;
-          text-decoration: none !important;
-        }
-
-        .footer-2-2 .list-menu:hover {
-          color: #555252;
-        }
-
-        .footer-2-2 hr.hr {
-          margin: 0;
-          border: 0;
-          border-top: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .footer-2-2 .border-color {
-          color: #c7c7c7;
-        }
-
-        .footer-2-2 .footer-link {
-          color: #c7c7c7;
-        }
-
-        .footer-2-2 .footer-link:hover {
-          color: #555252;
-        }
-
-        .footer-2-2 .social-media-c:hover circle,
-        .footer-2-2 .social-media-p:hover path {
-          fill: #555252;
-        }
-
-        .footer-2-2 .footer-info-space {
-          padding-top: 3rem;
-        }
-
-        .footer-2-2 .list-footer {
-          padding: 5rem 1rem 3rem 1rem;
-        }
-
-        .footer-2-2 .info-footer {
-          padding: 0 1rem 3rem;
-        }
-
-        @media (min-width: 576px) {
-          .footer-2-2 .list-footer {
-            padding: 5rem 2rem 3rem 2rem;
-          }
-
-          .footer-2-2 .info-footer {
-            padding: 0 2rem 3rem;
-          }
-        }
-
-        @media (min-width: 768px) {
-          .footer-2-2 .list-footer {
-            padding: 5rem 4rem 6rem 4rem;
-          }
-
-          .footer-2-2 .info-footer {
-            padding: 0 4rem 3rem;
-          }
-        }
-
-        @media (min-width: 992px) {
-          .footer-2-2 .list-footer {
-            padding: 5rem 6rem 6rem 6rem;
-          }
-
-          .footer-2-2 .info-footer {
-            padding: 0 6rem 3rem;
-          }
-        }
-      </style>
-
       <div
         class="footer-2-2 container-xxl mx-auto position-relative p-0"
         style="font-family: 'Poppins', sans-serif"
@@ -2084,10 +949,26 @@
             <div class="col-lg-3 col-md-6">
               <div class="">
                 <div class="list-space">
-                  <img
-                    src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-5.png"
-                    alt=""
-                  />
+                  <a class="navbar-brand" href="#">
+                    <svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.5 15.75C3.5 8.98451 8.98451 3.5 15.75 3.5H29.75C30.7165 3.5 31.5 4.2835 31.5 5.25C31.5 6.2165 30.7165 7 29.75 7H15.75C10.9175 7 7 10.9175 7 15.75V29.75C7 30.7165 6.2165 31.5 5.25 31.5C4.2835 31.5 3.5 30.7165 3.5 29.75V15.75Z"
+                        fill="#0EC8F8"
+                      />
+                      <path
+                        d="M10.5 17.5C10.5 13.634 13.634 10.5 17.5 10.5H31.5C35.366 10.5 38.5 13.634 38.5 17.5V31.5C38.5 35.366 35.366 38.5 31.5 38.5H17.5C13.634 38.5 10.5 35.366 10.5 31.5V17.5Z"
+                        fill="#0EC8F8"
+                      />
+                    </svg> </a
+                  >HERVA
                 </div>
                 <nav class="list-unstyled">
                   <li class="list-space">
@@ -2097,16 +978,16 @@
                     <a href="" class="list-menu">About</a>
                   </li>
                   <li class="list-space">
-                    <a href="" class="list-menu">Features</a>
+                    <a href="" class="list-menu">Produk</a>
+                  </li>
+                  <li class="list-space">
+                    <a href="" class="list-menu">Testimoni</a>
                   </li>
                   <li class="list-space">
                     <a href="" class="list-menu">Pricing</a>
                   </li>
                   <li class="list-space">
-                    <a href="" class="list-menu">Testimonial</a>
-                  </li>
-                  <li class="list-space">
-                    <a href="" class="list-menu">Help</a>
+                    <a href="" class="list-menu">Contact</a>
                   </li>
                 </nav>
               </div>
@@ -2115,19 +996,16 @@
               <h2 class="footer-text-title">Product</h2>
               <nav class="list-unstyled">
                 <li class="list-space">
-                  <a href="" class="list-menu">Real Time Analytic</a>
+                  <a href="" class="list-menu">Facebook ads</a>
                 </li>
                 <li class="list-space">
-                  <a href="" class="list-menu">Easy to Operate</a>
+                  <a href="" class="list-menu">Instagram Ads</a>
                 </li>
                 <li class="list-space">
-                  <a href="" class="list-menu">Full Secured</a>
+                  <a href="" class="list-menu">Instagram Feeds</a>
                 </li>
                 <li class="list-space">
-                  <a href="" class="list-menu">Analytic Tool</a>
-                </li>
-                <li class="list-space">
-                  <a href="" class="list-menu">Story</a>
+                  <a href="" class="list-menu">Reseller</a>
                 </li>
               </nav>
             </div>
@@ -2135,30 +1013,11 @@
               <h2 class="footer-text-title">Company</h2>
               <nav class="list-unstyled">
                 <li class="list-space">
-                  <a href="" class="list-menu">Contact Us</a>
-                </li>
-                <li class="list-space">
-                  <a href="" class="list-menu">Blog</a>
-                </li>
-                <li class="list-space">
-                  <a href="" class="list-menu">Culture</a>
-                </li>
-                <li class="list-space">
-                  <a href="" class="list-menu">Security</a>
-                </li>
-              </nav>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h2 class="footer-text-title">Support</h2>
-              <nav class="list-unstyled">
-                <li class="list-space">
-                  <a href="" class="list-menu">Getting Started</a>
-                </li>
-                <li class="list-space">
-                  <a href="" class="list-menu">Help Center</a>
-                </li>
-                <li class="list-space">
-                  <a href="" class="list-menu">Server Status</a>
+                  <a
+                    href="https://wa.me/6281230066867?text=Hallo admin, saya mau tanya-tanya mengenai pemesanan ?"
+                    class="list-menu"
+                    >Contact Us</a
+                  >
                 </li>
               </nav>
             </div>
@@ -2252,54 +1111,18 @@
                   />
                 </svg>
               </a>
-              <a href="">
-                <svg
-                  class="social-media-c"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
-                  <g clip-path="url(#clip0)">
-                    <path
-                      d="M17.9027 22.4467C17.916 22.4427 17.9287 22.4373 17.942 22.4327C26.0853 19.1973 23.8327 7 15 7C10.5673 7 7 10.6133 7 15C7 20.5513 12.6227 24.5127 17.9027 22.4467ZM10.5207 20.3727C11.0887 19.418 12.9267 16.7247 16.064 15.7953C16.72 17.468 17.18 19.4193 17.2253 21.632C14.848 22.4313 12.3407 21.8933 10.5207 20.3727V20.3727ZM18.2087 21.2147C18.1213 19.0887 17.6873 17.2033 17.0687 15.57C18.4567 15.3533 20.0633 15.498 21.8853 16.228C21.498 18.402 20.108 20.2293 18.2087 21.2147V21.2147ZM21.99 15.194C19.9833 14.44 18.2147 14.346 16.684 14.638C16.4473 14.1047 16.1987 13.592 15.9353 13.12C18.284 12.182 19.672 11.0387 20.2933 10.4333C21.39 11.7027 22.0413 13.346 21.99 15.194V15.194ZM19.5833 9.72133C19.018 10.2593 17.6867 11.346 15.41 12.2347C14.294 10.4693 13.1007 9.224 12.3447 8.52667C14.7633 7.53067 17.5527 7.956 19.5833 9.72133V9.72133ZM11.3887 9.01533C11.9593 9.51733 13.212 10.7227 14.4207 12.5867C12.7607 13.1213 10.6793 13.514 8.148 13.5693C8.55067 11.64 9.75333 10.0053 11.3887 9.01533V9.01533ZM8.02133 14.5733C10.8547 14.5273 13.148 14.08 14.9607 13.4747C15.2113 13.914 15.4493 14.3927 15.678 14.89C12.5213 15.8953 10.5487 18.4907 9.79333 19.6627C8.57467 18.3027 7.90267 16.528 8.02133 14.5733V14.5733Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0">
-                      <rect
-                        width="16"
-                        height="16"
-                        fill="white"
-                        transform="translate(7 7)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
             </div>
             <nav
               class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4"
             >
               <a href="" class="footer-link" style="text-decoration: none"
-                >Terms of Service</a
-              >
-              <span>|</span>
-              <a href="" class="footer-link" style="text-decoration: none"
-                >Privacy Policy</a
-              >
-              <span>|</span>
-              <a href="" class="footer-link" style="text-decoration: none"
-                >Licenses</a
+                >Herva ID</a
               >
             </nav>
             <nav
               class="d-flex flex-lg-row flex-column align-items-center justify-content-center"
             >
-              <p style="margin: 0">Copyright © 2021 Analystic Max</p>
+              <p style="margin: 0">Copyright © 2022 Herva</p>
             </nav>
           </div>
         </div>
